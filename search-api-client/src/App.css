@@ -1,42 +1,80 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
+.search-container {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1dvh;
+  margin-top: 5dvh;
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+  h3 {
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1dvh;
+  }
+
+  input {
+    width: 50%;
+    height: 5dvh;
+    border-radius: 10px;
+    margin: auto;
+    padding: 10px;
+  }
+
+  button {
+    width: 8dvw;
+    height: 5dvh;
+    margin: auto;
+    background-color: white;
+  }
+
+  button:hover {
+    cursor: pointer;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+.search-results {
+  display: flex;
+  flex-direction: column;
+  gap: 10dvh;
+  width: 95%;
+  margin: auto;
+  margin-top: 20dvh;
+
+  .search-results-container {
+    display: flex;
+    gap: 2%;
+    height: 20dvh;
+    border-bottom: 1px solid red;
   }
 }
 
-.card {
-  padding: 2em;
-}
+.pagination {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  gap: 1dvw;
+  margin-top: 8dvh;
+  margin-bottom: 8dvh;
 
-.read-the-docs {
-  color: #888;
+  button {
+    height: 40px;
+    width: 80px;
+  }
+
+  button:hover {
+    cursor: pointer;
+  }
+
+  .previous-button-prevent {
+    opacity: 30%;
+  }
+
+  .previous-button-prevent:hover{
+    cursor:no-drop
+  }
 }
